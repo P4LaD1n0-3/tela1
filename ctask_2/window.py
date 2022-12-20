@@ -7,13 +7,13 @@ def btn_clicked():
 
 window = Tk()
 
-window.geometry("580x400")
-window.configure(bg = "#f4f4f4")
+window.geometry("850x450")
+window.configure(bg = "#ffffff")
 canvas = Canvas(
     window,
-    bg = "#f4f4f4",
-    height = 400,
-    width = 580,
+    bg = "#ffffff",
+    height = 450,
+    width = 850,
     bd = 0,
     highlightthickness = 0,
     relief = "ridge")
@@ -21,7 +21,7 @@ canvas.place(x = 0, y = 0)
 
 background_img = PhotoImage(file = f"background.png")
 background = canvas.create_image(
-    290.0, 200.0,
+    425.0, 225.0,
     image=background_img)
 
 window.resizable(False, False)
